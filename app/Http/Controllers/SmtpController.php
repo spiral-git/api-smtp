@@ -8,12 +8,13 @@ use Illuminate\Support\Facades\Validator;
 use Exception;
 
 class SmtpController
-{
+{  
 
 public function enviar2(Request $request)
 {
     return response()->json([
-        'ok' => true
+        'ok' => true,
+        'hola' => 'Mundo'
     ]);
 }
 
