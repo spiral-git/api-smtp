@@ -10,6 +10,13 @@ use Exception;
 class SmtpController
 {
 
+public function enviar2(Request $request)
+{
+    return response()->json([
+        'ok' => true
+    ]);
+}
+
     public function enviar(Request $request)
     {
         $validator = Validator::make($request->all(), [
