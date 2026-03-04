@@ -30,7 +30,8 @@ class SmtpController
 
             Mail::raw($request->message, function ($mail) use ($request) {
                 $mail->to($request->email)
-                    ->subject($request->subject);
+                    ->subject($request->subject)
+                    ->html($request->message);
             });
 
             return response()->json([
