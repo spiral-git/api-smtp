@@ -10,13 +10,6 @@ use Exception;
 class SmtpController
 {  
 
-public function enviar2(Request $request)
-{
-    return response()->json([
-        'ok' => true,
-        'hola' => 'Mundo'
-    ]);
-}
 
     public function enviar(Request $request)
     {
